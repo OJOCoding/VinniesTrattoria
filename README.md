@@ -2,7 +2,7 @@
 
 This is a full stack website project called Vinnie's Trattoria, which incorporates HTML, CSS, JavaScript, Bootstrap, PHP, AJAX, and MySQL. The project aims to enhance the user experience by providing new pages and incorporating various technologies.
 
-![FLOWCHART](Flowchart.png)
+![FLOWCHART](Flowchart.PNG)
 
 The main page of the website is index.php, which serves as the entry point. It offers an admin route and a user route to access the restaurant page. Additionally, it utilizes AJAX to call a PHP file that creates the database and inserts an SQL file.
 
