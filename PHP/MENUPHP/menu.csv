@@ -1,0 +1,52 @@
+name,description,price,category
+Luigi Leonardo – Rubicone IGT,Chardonnay – Trebbiano,25,Vini Bianci
+Oenops – Apla,Roditis – Malagouzia – Vidiano,30,Vini Bianci
+Broglia – Gavi Di Gavi,Cortese,37,Vini Bianci
+Syros Winery – Fabrica,Koudoura - Monemvasia,35,Vini Bianci
+La Tunella – Pinot Grigio del Friulli,Pinot Grigio,38,Vini Bianci
+Baglio Del Sole – Nero D’Avola,Sangiovese – 2020,35,Vini Rossi
+"Frattoria Selvepiana – Chianti ""Rufina""",Sangiovese – Colorino – Canaiolo – Malvasia Nera,40,Vini Rossi
+Dievole – Chianti Classicov,Sangiovese – Canaiolo – Colorino,42,Vini Rossi
+Batatsiolo – Barolo DOCG,Nebbiolo - 2018,62,Vini Rossi
+Pio Cesare – Barolo,Nebbiolo – 2018,95,Vini Rossi
+Akriotou Estate – Tupee,Syrah – Merlot | Semi Sweet,27,Vini Rosati
+Lalikos - Variete,Grenache Rouge | Semi Sweet,30,Vini Rosati
+Batatsiolo – Piemonte Rosato DOC,Barberra – Dolcetto - Nebbiolo,32,Vini Rosati
+Maseria Surani - Negroamaro,Manduria – Negroamaro,39,Vini Rosati
+Chateau Des Marres - Prestige,Cinsault – Grenache – Syrah – Tibouren,55,Vini Rosati
+Aperol Spritz,Aperol | Prosecco | Soda Water,6.5,Spritz
+Campari Spritz,Campari | Prosecco | Soda Water,7,Spritz
+Veneziano Spritz,Select Aperitivo | Prosecco | Soda Water,7,Spritz
+Amaro Spritz,Amaro Montengro | Prosecco | Polara Limonata,7,Spritz
+El Greco,Italicus Rosolio | Rose Wine | Polara Mandarino Al Limone,7,Spritz
+Bloody Mary,Finlandia Vodka | Naked Tomato | Fermented Tomato Water Lemon Cordial | Spices,8,Aperitivi Cocktails
+Dry Martini,Bulldog London Dry Gin | Cocchi Extra Dry Vermouth | Olive or Lemon zest,8,Aperitivi Cocktails
+Milano - Torino,Campari | Sweet Vermouth Blend,7,Aperitivi Cocktails
+Negroni ,Bulldog London Dry Gin | Campari | Sweet Vermouth Blend,8,Aperitivi Cocktails
+Montenegroni,Bulldog London Dry Gin | Amaro Montenegro | Sweet Vermouth Blend,8,Aperitivi Cocktails
+Maracuja Spritz,Passion Fruit Frizzante | Lemon | Polara Aranciata,6.5,Non-Alcoholic - Analcolico
+Zero Zero,Non Alcoholic Semi Sweet Wine,5.5,Non-Alcoholic - Analcolico
+Maracuja Frizzannte,Passion Fruit Non Alcoholic Frizzante,5.5,Non-Alcoholic - Analcolico
+Natual Mineral,Acqua Panna,2.5,Water - Acque
+Sparkling,San Pellegrino,4.5,Water - Acque
+Focaccia Toscana,"Warm Focaccia with nduja and butter with pine honey, tomato vinegar, lavender and pollen",6,Antipasti
+Caprese Mozzarella,"Cherry tomatoes, tomatoes, basil pesto, carob powder, basil, extra virgin olive oil and aged balsamic vinegar",16,Antipasti
+Bruschetta Vitello Tonnato,"Veal eye of round cooked in 60⁰C, tuna sauce, arugula, capers, samphire, lemon confit and smoked olive oil.",13,Antipasti
+Insalata,"Mesclun Bio, Aegina’s pistachio, parmigiano Reggiano aged 24 months, melon, prosciutto, cherry tomatoes and dressing from white balsamic vinegar.",12,Antipasti
+Calamari Fritti,"Baby squids breaded with semolina,chilly pickles and parsley mayonnaise.",10,Antipasti
+Tagliere di Formaggi e Salumi,"Variety of cold cuts and sausages, cheeses, antipasti and fig marmalade.",14,Antipasti
+Gnocchi e Gorgonzola,"Gorgonzola cream sauce, caramelized fig, walnut, sage oil and roe Trikalinos.",13,Primi
+Bucatini all’ Amatriciana,"Sauce from San Marzano tomatoes, Tuscan pancetta, chilly, pecorino Romano and extra virgin olive oil.",12,Primi
+Fettucce alle Vongole,"Fresh clams, garlic, white wine, parsley, tomato, butter and extra virgin olive oil.",16,Primi
+Rigatoni Cacio e Peppe,"Riesling wine, Taleggio, parmigiano Reggiano aged 24 months and 4 types of peppers.",12,Primi
+Risotto Tartufo,"Carnaroli rice, wild mushrooms, white truffle cream, parmigiano Reggiano aged 24 months, butter and arugula.",15,Primi
+Margherita,"San Marzano sauce, fresh mozzarella, basil and extra virgin olive oil.",10,Pizza
+Diavola,"Pumpkin cream, smoked provolone, salsiccia picante, chilly, and yoghurt with herbs.",12,Pizza
+Marinara,"San Marzano sauce, olives, cherry tomatoes, anchovies, caper, oregano and extra virgin olive oil",10,Pizza
+Bianca,"Sage cream, artichokes, fresh mozzarella, coppa, arugula and parmigiano Reggiano aged 24 months.",13,Pizza
+Tartufo,"White truffle cream, smoked provolone, Tuscan pancetta, porto bello, egg and arugula.",15,Pizza
+Escalope Milanaise,"Boneless strip loin from veal breaded in Panko, with fresh salad and gremolata.",16,Secondi
+Bistecca di Vitello,"T-bone from veal, with baby potatoes and mustard with mustard seeds.",26,Secondi
+Bistecca alla Fiorentina,"Τ-bone from Italian beef Angus, with baby potatoes and mustard with mustard seeds.",7,Secondi
+Tiramisu,"Traditional tiramisu with handmade savoiyard, espresso, mascarpone cream and cocoa",9,Dolce
+Cannoli,"Handmade cannoli filled with cream from ricotta and Aegina’s pistachio, Callebaut chocolate mousse, sauce from red fruits and orange conf",9,Dolce
