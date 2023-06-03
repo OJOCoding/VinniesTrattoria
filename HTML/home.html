@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/general.css" />
+    <script src="../JavaScript/header.js"></script>
+    <title>Vinnie's Trattoria</title>
+    <style>
+      html,
+      body {
+        max-width: 100%;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background-color: #fbfaf1;
+        width: 100vw;
+      }
+
+      main {
+        margin: 0;
+        padding: 0;
+      }
+
+      main h1 {
+        font-weight: 600;
+        font-size: 5.5vw;
+        letter-spacing: 0.3em;
+        color: #a10412;
+        margin-left: 3vw;
+        margin-top: 1.1em;
+      }
+
+      .home_col1 h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.5vw;
+        line-height: 4vw;
+        letter-spacing: 0.2em;
+        color: #383127;
+        width: inherit;
+      }
+
+      .home_col1 {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2.8vw;
+      }
+
+      .btn {
+        background-color: #a10412;
+        border: none;
+        color: #f8b960;
+        padding: 20px 40px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 45px;
+        font-weight: 600;
+        width: fit-content;
+      }
+
+      .btn2 {
+        background-color: #f8b960;
+        border: none;
+        color: #383127;
+        padding: 20px 40px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 45px;
+        font-weight: 600;
+        width: fit-content;
+        margin-top: 1.5vw;
+      }
+
+      .home_col2 {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        right: 200px;
+      }
+
+      .home_col2 img {
+        width: 70vw;
+      }
+
+      .columns {
+        display: flex;
+      }
+    </style>
+    <script src="../JavaScript/header.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <h1>Vinnie's Trattoria.</h1>
+      <div class="columns">
+        <div class="home_col1">
+          <h2>Homestyle Italian cooking – best enjoyed with family.</h2>
+          <a href="about_us.html" class="btn btn-danger btn-round btn-lg"
+            >LEARN MORE ABOUT US</a
+          >
+          <a
+            href="../PHP/MENUPHP/menu.php"
+            class="btn2 btn-warning btn-round btn-lg"
+            >CHECK OUR MENU</a
+          >
+        </div>
+        <div class="home_col2">
+          <img src="../images/home_plate.png" alt="" />
+        </div>
+      </div>
+    </main>
+    <footer
+      class="text-center text-white fixed-bottom"
+      style="background-color: #a10412"
+    >
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 CS 306: SPRING I PROJECT SUBMISSION BY
+        <a class="text-white" href="credits.html">ONI LUCA</a>
+      </div>
+    </footer>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $.ajax({
+        url: "../PHP/MENUPHP/import.php",
+        type: "POST",
+        success: function (response) {
+          $("#result").html(response);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          $("#result").html("Error: " + textStatus + " - " + errorThrown);
+        },
+      });
+    });
+  </script>
+</html>

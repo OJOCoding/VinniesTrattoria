@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../CSS/general.css" />
+    <script src="../JavaScript/header.js"></script>
+    <title>Vinnie's Trattoria</title>
+    <style>
+      html,
+      body {
+        max-width: 100%;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background-color: #fbfaf1;
+        width: 100vw;
+      }
+
+      main {
+        height: 100vh;
+        text-align: center;
+      }
+
+      main img {
+        position: absolute;
+        top: 6vw;
+        left: 10vw;
+        z-index: 10;
+        height: 80%;
+      }
+
+      .credit-text h1 {
+        font-family: "Roboto", "sans-serif";
+        color: #383127;
+        font-size: 3vw;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin-top: 10vw;
+      }
+
+      .credit-text {
+        position: relative;
+        width: 50vw;
+        margin-left: 25vw;
+        margin-top: -35vw;
+        z-index: 5;
+      }
+
+      .credit-text p {
+        font-family: "Roboto", "sans-serif";
+        color: #fbfaf1;
+        font-size: 2vw;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-style: italic;
+      }
+
+      .download {
+        background-color: #a10412;
+        border: none;
+        color: #fbfaf1;
+        padding: 20px 40px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.25vw;
+        border-radius: 45px;
+        font-weight: 600;
+      }
+
+      .background-img {
+        width: 65vw;
+        height: 35vw;
+        background-color: rgba(159, 4, 17, 0.5);
+        filter: blur(5px);
+        z-index: 2;
+        border-radius: 48% 52% 41% 59% / 41% 66% 34% 59%;
+        position: relative;
+        top: 7.5vw;
+        left: 20vw;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div id="credit-div">
+        <img src="../images/credits_peep.svg" alt="" />
+        <div class="background-img"></div>
+        <div class="credit-text">
+          <h1>Hi, I am Oni!</h1>
+          <p id="encrypt">
+            This was my submission for CS 306 SPRING I Project. To accomplish
+            this project i have used a lot of medias, websites, tools, fonts,
+            etc. if you want to check the full design, download the document
+            below. Thank you for checking this website.
+          </p>
+          <a class="download" download href="../FLOWCHART/FLOWCHART.pdf"
+            >DOWNLOAD PDF</a
+          >
+        </div>
+      </div>
+    </main>
+    <footer
+      class="text-center text-white fixed-bottom"
+      style="background-color: #a10412"
+    >
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 CS 306: SPRING I PROJECT SUBMISSION BY
+        <a class="text-white" href="credits.html">ONI LUCA</a>
+      </div>
+    </footer>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $(".background-img").fadeIn(100);
+
+      $(".credit-text").animate(
+        {
+          opacity: 1,
+          top: "5px",
+        },
+        1000
+      );
+      $("img").hover(
+        function () {
+          $(this).animate(
+            {
+              width: "150px",
+              height: "150px",
+            },
+            500
+          );
+        },
+        function () {
+          $(this).animate(
+            {
+              width: "100px",
+              height: "100px",
+            },
+            500
+          );
+        }
+      );
+      $(".download").hover(
+        function () {
+          $(this).css("box-shadow", "0px 0px 15px #999");
+        },
+        function () {
+          $(this).css("box-shadow", "none");
+        }
+      );
+
+      $("img").fadeIn(1500);
+      $(".credit-text").on("click", function () {
+        $(this).addClass("clicked");
+      });
+
+      $(".background-img").hover(
+        function () {
+          $(this).animate({ opacity: 0.5 }, 500);
+        },
+        function () {
+          $(this).animate({ opacity: 1 }, 500);
+        }
+      );
+      $(".download").hover(function () {
+        $(this).toggleClass("border");
+      });
+
+      const encrypt = (str) => {
+        return str.split("").reverse().join("");
+      };
+
+      const decrypt = (str) => {
+        return str.split("").reverse().join("");
+      };
+
+      const pTag = document.getElementById("encrypt");
+      const originalText = pTag.textContent;
+
+      pTag.addEventListener("mouseover", () => {
+        pTag.textContent = encrypt(originalText);
+      });
+
+      pTag.addEventListener("mouseout", () => {
+        pTag.textContent = decrypt(pTag.textContent);
+      });
+    });
+  </script>
+</html>
