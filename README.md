@@ -1,35 +1,118 @@
-# VinniesTrattoria_FullStackWebsite
-
-This is a full stack website project called Vinnie's Trattoria, which incorporates HTML, CSS, JavaScript, Bootstrap, PHP, AJAX, and MySQL. The project aims to enhance the user experience by providing new pages and incorporating various technologies.
+# Vinnie's Trattoria Website
 
 ![FLOWCHART](Flowchart.PNG)
+## Overview
+Vinnie's Trattoria Website is a beautifully designed, user-friendly platform tailored to showcase the charm and authenticity of a trattoria-style restaurant. The website highlights the menu, ambiance, and unique offerings of Vinnie's Trattoria while providing visitors with a seamless browsing experience. Additionally, the website features a blog section where staff can share updates, recipes, and stories, as well as an admin panel for managing content and operations.
 
-The main page of the website is index.php, which serves as the entry point. It offers an admin route and a user route to access the restaurant page. Additionally, it utilizes AJAX to call a PHP file that creates the database and inserts an SQL file.
+## Features
+- **Homepage:**
+  - Eye-catching banner image (see above) representing the essence of Vinnie's Trattoria.
+  - Quick links to menu, reservations, blog, and contact information.
+- **Menu Page:**
+  - Full menu with detailed descriptions and enticing images.
+- **Reservations:**
+  - Online booking form to reserve tables effortlessly.
+- **Blog Section:**
+  - Staff can post updates, recipes, and behind-the-scenes stories.
+  - Organized with categories and tags for easy navigation.
+- **Contact Page:**
+  - Map integration, address, and direct contact form for inquiries.
+- **Mobile-Friendly:**
+  - Fully responsive design ensuring compatibility across all devices.
+- **Admin Panel:**
+  - Built with PHP for managing menu items, blog posts, reservations, and user accounts.
 
-The project consists of seven tables, namely:
+## Technologies Used
+- **Frontend:**
+  - HTML5
+  - CSS3
+  - JavaScript (ES6+)
+- **Backend:**
+  - PHP (for admin functionalities)
+- **Libraries/Frameworks:**
+  - Bootstrap
+  - Font Awesome
+- **Database:**
+  - MySQL (for storing menu items, blog posts, reservations, etc.)
+- **Tools:**
+  - Visual Studio Code
+  - Git/GitHub
 
-Blog: Contains information about the blogs added to the website, including ID, Title, Author, Content, Date Created, and Image URL.
-Reviews: Stores information about the reviews added to the website, including ID, Name, Email, Review, and Image URL.
-Job_app_files: Stores the files of job applicants who have applied to join the team. It includes ID, Name, Data, and Created fields, with files stored in the form of BLOB datatype.
-Newsletter: Contains the emails of people who have subscribed to the newsletter.
-Menu: Stores menu items available at the restaurant. It includes ID, Name, Description, Price, and Category fields. Menu items are added through AJAX and JSON parsing from a menu CSV file.
-Users: Stores login credentials for the admin to access the admin panel. It includes ID, Username, and Password fields.
-User review: A JOIN table that contains the email of the user who left a review and a password credential. It enables users to enter the user panel where their reviews and information are displayed.
-The project's code is organized as follows:
+## Installation
 
-CSS: Contains general.css, which applies simple styling to the website's header and navbar.
-JavaScript: Includes various scripts such as gallery.js for navigating through images, header.js for creating a collapsible navbar for HTML pages, and phpheader.js for PHP pages. These scripts enhance the user interface and provide interactive features.
-DBCREATE: Contains dbcreate.php, responsible for creating the database and inserting the SQL file. The 306.sql file creates and populates the necessary tables.
-DBMS: Consists of db.php, which establishes a connection with the database, and dbconfig.php, which stores database-related information.
-PHP: Contains subdirectories for different functionalities of the website.
-BLOGPHP: Implements features related to the blog section, including displaying blogs, adding blogs, and managing the newsletter.
-REVIEWPHP: Manages the review section, allowing users to add, edit, and delete reviews.
-MENUPHP: Handles the menu functionality, displaying menu items, implementing live search with AJAX, and importing menu items from a CSV file.
-ADMIN: Provides an admin login and admin panel to manage the website's tables, including delete, edit, and download actions.
-JOBFILE: Handles the hiring process, enabling users to upload their CV files.
-HTML: Includes various HTML pages such as home.html, about_us.html, delivery.html, gallery.html, contact.html, and credits.html. Each page serves a specific purpose and provides relevant information to the users.
-IMAGES: Contains all the images used in the project.
-FLOWCHART: Includes a design flowchart PDF for better understanding of the project's structure and navigation.
-The project incorporates a wide range of functionalities, including CRUD operations, table joins, session management, AJAX functions, live search algorithms, JSON parsing, dynamic display, jQuery UI, jQuery effects, error trapping, validation methods, and more.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/OJOCoding/VinniesTrattoria.git
+   cd VinniesTrattoria
+   ```
 
-Feel free to explore and enjoy the Vinnie's Trattoria website!
+2. Set up a local server (e.g., XAMPP or WAMP) to run the PHP backend and MySQL database.
+
+3. Import the database:
+   - Locate the `database.sql` file in the repository.
+   - Import it into your MySQL server using a tool like phpMyAdmin.
+
+4. Update the database configuration:
+   - Edit the `config.php` file in the `admin/` directory to match your database credentials.
+
+5. Install frontend dependencies (if any):
+   ```bash
+   cd client
+   npm install
+   ```
+
+6. Run the application:
+   - Start your local server and ensure PHP and MySQL are running.
+   - Open `index.html` in your browser to view the website.
+   - Access the admin panel by navigating to `http://localhost/admin/`.
+
+## Project Structure
+```plaintext
+VinniesTrattoria/
+├── admin/              # Admin panel (PHP backend)
+│   ├── config.php      # Database configuration
+│   ├── dashboard.php   # Admin dashboard
+│   ├── ...             # Other admin functionalities
+├── blog/               # Blog-related files
+│   ├── posts/          # Blog post content
+│   ├── categories/     # Blog categories
+├── css/                # Stylesheets
+├── img/                # Images used in the website
+├── js/                 # JavaScript files
+├── index.html          # Main HTML file
+├── about.html          # About page
+├── contact.html        # Contact page
+├── README.md           # Project documentation
+├── database.sql        # Database schema and initial data
+└── LICENSE             # License file
+```
+
+## Usage
+- **Local Development:**
+  - Open the `index.html` file directly in a browser to view the website.
+  - Access the admin panel to manage content.
+- **Customization:**
+  - Update CSS in the `css/` directory to modify the design.
+  - Edit HTML, PHP, or JavaScript files to add or modify functionality.
+
+## Contributing
+Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch for your changes:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes and push to your fork.
+4. Open a pull request detailing your updates.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+## Contact
+For any questions or support, please reach out:
+- GitHub: [OJOCODING](https://github.com/OJOCODING)
+- Email: [oniluca@ymail.com](mailto:oniluca@ymail.com)
+
+---
+
+Thank you for visiting the Vinnie's Trattoria Website project! We hope you enjoy the experience.
